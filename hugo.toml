@@ -37,8 +37,8 @@ math = true
 
 [params.profileMode]
     enabled = true
-    title = ' $\\mathscr{Sciens Arcana}$ ' # 或者用拉丁文
-    subtitle = '$\mathfrak{Coagula\ in\ Condensatum}$ | $\mathfrak{Solve\ per\ Prisma}$'
+    title = " Sciens Arcana "  # 或者用拉丁文
+    subtitle = " Coagula in Condensatum | Solve per Prisma "
     imageUrl = "/images/avatar.jpg" # 放一张神秘主义符号图片
     imageWidth = 150
     imageHeight = 120
