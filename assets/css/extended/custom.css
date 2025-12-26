@@ -1,0 +1,55 @@
+/* 基础配色与字体 */
+:root {
+    --theme: #1a1b1e;           /* 深夜背景色 */
+    --entry: #25262b;
+    --primary: #d4af37;         /* 炼金金（标题和链接） */
+    --secondary: #a0a0a0;       /* 次要文字灰色 */
+    --tertiary: #3b3d42;
+    --content: #e0e0e0;         /* 正文浅灰色，模仿旧纸张文字 */
+    --code-bg: #2e2e2e;
+}
+
+/* 应用古典字体 */
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;          /* 稍微加大字号，增加可读性 */
+    background-color: var(--theme);
+    color: var(--content);
+    line-height: 1.6;
+}
+
+/* 标题使用罗马石碑风格 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.1rem;
+    color: var(--primary) !important;
+}
+
+/* 文章列表卡片的美化 */
+.post-entry {
+    border: 1px solid #3d3d3d;   /* 淡淡的边框线 */
+    transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+    border-color: var(--primary); /* 悬停时边框变金 */
+    transform: translateY(-2px);
+}
+
+/* 装饰性元素：给第一段添加首字下沉（古典书籍风格） */
+.post-content p:first-of-type::first-letter {
+    font-family: 'Cinzel', serif;
+    float: left;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    padding-right: 0.5rem;
+    color: var(--primary);
+}
+
+/* 让数学公式 KaTeX 稍微发出一层淡淡的微光，增加神秘感 */
+.katex-display {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    overflow-x: auto;
+    padding: 1rem 0;
+}
