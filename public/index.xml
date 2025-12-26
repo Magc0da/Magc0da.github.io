@@ -73,5 +73,22 @@ $$</description>
 &lt;p&gt;This is a conference on arithmetic geometry, which I attended and saw Ruochuan Liu at the first place. He was then elected as the national academician in math.&lt;/p&gt;
 &lt;p&gt;Exercise: Find me out.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>固态Abel群的六函子</title>
+      <link>http://localhost:1313/expository_notes/scholze/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/expository_notes/scholze/</guid>
+      <description>&lt;h1 id=&#34;1-上同调想要成为层论-层论想要变成六函子&#34;&gt;1. 上同调想要成为层论, 层论想要变成六函子.&lt;/h1&gt;
+&lt;p&gt;代数几何以其多得批爆的上同调理论令人呃呃, 我们目前已知的就有&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;J.K.Love&lt;/del&gt; , &lt;del&gt;ming&lt;/del&gt;, 凝. 凝聚层做系数的凝聚上同调 $H_{\text{Coh}}^{\ast}(-,\mathcal{O})$. 最简单的情况就是取结构层自身, 其它不外是拼好层 $\mathcal{O}^{\oplus n}$.&lt;/li&gt;
+&lt;li&gt;奇异/ Betti 上同调 $H_{\text{B}}^{\ast}(-,\mathbb{Z})$.&lt;/li&gt;
+&lt;li&gt;$\ell$-adic 上同调 $H_{\ell}(-,\mathbb{Z}_{\ell})$, 如果你想翻译那个 adic 也可以叫它 $\ell$ 进. (我觉得这几个符号写来写去纯水字数的,,,最多强调系数和概形定义所取的环/域不一样)&lt;/li&gt;
+&lt;li&gt;代数 de Rham 上同调 $H_{\text{dR}}^{\ast}(-/k)$.&lt;/li&gt;
+&lt;li&gt;刚性上同调 $H_{\text{rig}}(-/K)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;纵使聚焦在代数几何, 各家上同调理论说的道理也不完全一样. 这点主要是因为负责解决的问题以及相应代数工具不一样.&lt;/p&gt;
+&lt;p&gt;对于凝聚层上同调, 它谈论的是任意环 $R$ 上的任意概形, 作为代数的结果, 计算得到的产物是 $R$-模. 本文从简, 不考虑病态反例而只观 finite type $R$-scheme with $R$ Noetherian. 代数几何的 Betti 上同调则试着去计算 finite type $\mathbb{C}$-scheme 的代数不变量, 产出 Abel 群. 而到了格人力作 $\ell$ 进上同调时则是需要在特征非 $\ell$ 的代数闭域 $k$ 上产出 $\mathbb{Z}_{\ell}$-模. 代数 de Rham 上同调则需要域特征保持不正时方能有效料理 finite type $k$-scheme (话说迄今有 non finite 的吗? 恼), 产物是 $k$-向量空间. 说到这你都不觉得有那么点来回流水线吗? &amp;ldquo;刚性上同调为定义在特征 $0$ 非 Archimedean 赋值域 $K$ 的特征 $p$ 剩余域上取有理点的代数簇服务的&amp;rdquo;,  平安时代的数学家 John Tate 的格言, 想必大家也都不由自主回想起来了吧个头啊. 反正产物也是 $K$-向量空间就对了.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

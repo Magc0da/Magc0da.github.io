@@ -77,3 +77,49 @@ a:hover {
     overflow-x: auto;
     padding: 1rem 0;
 }
+
+/* 定理环境样式 */
+.theorem {
+    margin: 1.5em 0;
+    padding: 1.2em;
+    background: rgba(148, 163, 184, 0.05); /* 极淡的冷色背景 */
+    border-left: 3px solid var(--primary); /* 左侧一条冷银色立柱 */
+    border-radius: 0 4px 4px 0;
+    font-style: italic; /* 依照数学惯例，定理正文使用斜体 */
+}
+
+/* 定理标题（如 Theorem 1.1） */
+.theorem::before {
+    content: "Theorem."; /* 默认为 Theorem */
+    font-family: 'Cinzel', serif; /* 使用你那套罗马石碑字体 */
+    font-weight: bold;
+    font-style: normal;
+    color: var(--primary);
+    margin-right: 0.5em;
+    text-transform: uppercase;
+}
+
+/* 证明环境样式 */
+.proof {
+    margin: 1em 0;
+    padding: 0 1em;
+    border-left: 1px solid var(--secondary);
+    color: var(--content);
+    position: relative;
+}
+
+.proof::before {
+    content: "Proof.";
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+/* 证明末尾的 QED 符号（证毕） */
+.proof::after {
+    content: "□"; /* 或者使用实心方块 ■ */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--primary);
+}
