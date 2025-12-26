@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>我的个人主页</title>
+    <title>Solve et Coagula</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on 我的个人主页</description>
+    <description>Recent content on Solve et Coagula</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 26 Dec 2025 17:49:23 +0800</lastBuildDate>
