@@ -4,7 +4,9 @@ title = "Solve et Coagula"
 theme = "PaperMod"
 
 [params]
-math = true   
+math = true
+defaultTheme = "dark" # 默认开启深色模式
+    disableThemeToggle = true # 禁用切换按钮，保持神秘的深夜氛围   
 
 [markup]
   [markup.goldmark]
@@ -14,6 +16,9 @@ math = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$']]
           inline = [['$', '$']]
+
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [[menu.main]]
     name = "Research"
@@ -35,10 +40,15 @@ math = true
     url = "/expository notes/"
     weight = 40
 
+[[menu.main]]
+    name = "神棍诸事"
+    url = "/taoism/"
+    weight = 50    
+
 [params.profileMode]
     enabled = true
     title = " Sciens Arcana "  # 或者用拉丁文
-    subtitle = " Coagula in Condensatum | Solve per Prisma "
+    subtitle = " Coagula in Condensatum | Solve per Prisma  <br><br> 数论爱好者, 职业神棍, 目前暂时在学算术几何 "
     imageUrl = "/images/avatar.jpg" # 放一张神秘主义符号图片
     imageWidth = 150
     imageHeight = 120
