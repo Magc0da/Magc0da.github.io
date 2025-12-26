@@ -1,0 +1,16 @@
+baseURL = "https://magc0da.github.io/"
+languageCode = "zh-cn"
+title = "我的个人主页"
+theme = "PaperMod"
+
+[params]
+math = true   
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]

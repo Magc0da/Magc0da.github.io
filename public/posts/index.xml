@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 我的个人主页</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 我的个人主页</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 Dec 2025 17:49:23 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/posts/hello/</link>
+      <pubDate>Fri, 26 Dec 2025 17:49:23 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hello/</guid>
+      <description>&lt;p&gt;这是一个行内公式：$E=mc^2$&lt;/p&gt;
+&lt;p&gt;这是一个块级公式：&lt;/p&gt;
+$$
+\int_0^\infty e^{-x^2} \mathrm{d}x = \frac{\sqrt{\pi}}{2}
+$$</description>
+    </item>
+  </channel>
+</rss>
