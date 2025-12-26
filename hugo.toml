@@ -1,6 +1,6 @@
 baseURL = "https://magc0da.github.io/"
 languageCode = "zh-cn"
-title = "我的个人主页"
+title = "Solve et Coagula"
 theme = "PaperMod"
 
 [params]
@@ -14,3 +14,37 @@ math = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$']]
           inline = [['$', '$']]
+
+[[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 10
+
+[[menu.main]]
+    name = "Travelling"
+    url = "/travelling/"
+    weight = 20
+
+[[menu.main]]
+    name = "Photos"
+    url = "/photos/"
+    weight = 30
+
+[[menu.main]]
+    name = "Expository Notes"
+    url = "/notes/"
+    weight = 40
+
+[params.profileMode]
+    enabled = true
+    title = "Sciens Arcana" # 或者用拉丁文
+    subtitle = "Coagula in Condensatum | Solve per Prisma"
+    imageUrl = "/images/alchemy_symbol.png" # 放一张神秘主义符号图片
+    imageWidth = 150
+    imageHeight = 150
+    [[params.profileMode.buttons]]
+        name = "Expository Notes"
+        url = "/expository notes"
+    [[params.profileMode.buttons]]
+        name = "Research"
+        url = "/research"     
