@@ -21,8 +21,8 @@ math = true
     weight = 10
 
 [[menu.main]]
-    name = "Travelling"
-    url = "/travelling/"
+    name = "Traveling"
+    url = "/traveling/"
     weight = 20
 
 [[menu.main]]
@@ -32,19 +32,17 @@ math = true
 
 [[menu.main]]
     name = "Expository Notes"
-    url = "/notes/"
+    url = "/expository notes/"
     weight = 40
 
 [params.profileMode]
     enabled = true
-    title = "Sciens Arcana" # 或者用拉丁文
-    subtitle = "Coagula in Condensatum | Solve per Prisma"
+    title = ' $\\mathscr{Sciens Arcana}$ ' # 或者用拉丁文
+    subtitle = '$\mathfrak{Coagula\ in\ Condensatum}$ | $\mathfrak{Solve\ per\ Prisma}$'
     imageUrl = "/images/avatar.jpg" # 放一张神秘主义符号图片
     imageWidth = 150
-    imageHeight = 150
+    imageHeight = 120
     [[params.profileMode.buttons]]
-        name = "Expository Notes"
-        url = "/expository notes"
-    [[params.profileMode.buttons]]
-        name = "Research"
-        url = "/research"     
+        name = "Fictions"
+        url = "/fiction"
+    
