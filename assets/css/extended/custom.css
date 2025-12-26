@@ -9,47 +9,43 @@
     --code-bg: #1e293b;
 }
 
-/* 修改 body 样式 */
-body {
-    /* 1. 核心：背景图与深色遮罩层 */
-    /* 我们在图片上方叠一层 80% 透明的午夜蓝，确保文字始终清晰可读 */
-    background-image: 
-        linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
-        url("/images/background.jpg");
-
-    /* 2. 让背景图固定，不随页面滚动（产生一种窥视深渊的静谧感） */
-    background-attachment: fixed;
-
-    /* 3. 让背景图自动缩放，铺满整个屏幕 */
-    background-size: cover;
-
-    /* 4. 图片居中 */
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* 5. 设置基础文字颜色为冷灰 */
-    color: #cbd5e1;
+/* 1. 确保 HTML 和 Body 是透明的，且背景图位于最底层 */
+html, body {
+    background: none !important; /* 清除默认背景色 */
+    background-color: #0f172a !important; /* 设置一个底色，防止图片加载前的闪白 */
 }
 
-/* 如果你的 PaperMod 开启了深色/浅色切换，我们需要确保在两种模式下背景都生效 */
-/* 下面的代码强制让背景色和卡片色变透明，露出底部的背景图 */
+body {
+    background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+        url("/images/background.jpg") !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
 
-.main {
+/* 2. 核心修复：强制让主页的 Profile 容器透明 */
+/* PaperMod 的主页名片由 .profile 包装 */
+.profile, .profile_inner, .main {
     background: transparent !important;
 }
 
-.post-entry, .profile_inner {
-    /* 给文章卡片添加一点点半透明磨砂感 */
-    background: rgba(30, 41, 59, 0.5) !important;
-    backdrop-filter: blur(8px); /* 磨砂玻璃效果 */
-    border: 1px solid rgba(148, 163, 184, 0.1);
+/* 3. 针对“深色模式”下的特殊遮挡进行处理 */
+/* PaperMod 在 dark 模式下会给 :root 加背景，我们需要把它关掉 */
+.dark {
+    --theme: transparent !important; /* 关键：让主题变量变透明 */
 }
 
-/* 移除底部页脚的强背景色 */
-.footer {
-    background: transparent;
-    color: rgba(148, 163, 184, 0.6);
-} 
+/* 4. 为了美观，给主页文字增加一点阴影，防止被背景图干扰 */
+.profile_inner h1 {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.profile_inner .subtitle {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    white-space: pre-wrap; /* 配合你之前的多行设置 */
+}
 
 /* 调整标题颜色为冷色调 */
 h1, h2, h3, h4, h5, h6 {

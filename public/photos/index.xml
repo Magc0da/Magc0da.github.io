@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Photos on Solve et Coagula</title>
+    <link>http://localhost:1313/photos/</link>
+    <description>Recent content in Photos on Solve et Coagula</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/photos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>北京算术会议</title>
+      <link>http://localhost:1313/photos/2025_june_beijing_arithmetic/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/photos/2025_june_beijing_arithmetic/</guid>
+      <description>&lt;p&gt;&lt;em&gt;距离院士最近的一集(虽然当时还未评选).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is a conference on arithmetic geometry, which I attended and saw Ruochuan Liu at the first place. He was then elected as the national academician in math.&lt;/p&gt;
+&lt;p&gt;Exercise: Find me out.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
